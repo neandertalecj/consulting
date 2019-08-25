@@ -42,8 +42,18 @@ header {
     line-height: 36px;
     color: #1b1b1b;
     background-color: #ffc222;
-    padding: 5px 20px 4px 40px;
+    padding: 5px 20px 4px 50px;
     font-size: 16px;
+    display: block;
+    position: relative;
+}
+
+.header__btn::before {
+    content: '\f0b1';
+    font-family: 'icomoon';
+    position: absolute;
+    left: 22px;
+    color: #1b1b1b;
 }
 
 .header__contacts::after {
@@ -57,6 +67,7 @@ header {
     color:#cbcacb;
     letter-spacing: 0.25px;
     line-height: 45px;
+    position: relative;
 }
 
 .header__phone {
@@ -64,8 +75,24 @@ header {
     padding-right: 30px;
 }
 
+.header__phone::before {
+    content: '\f095';
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    color: #ffc222;
+}
+
 .header__email {
     padding-left: 24px;
+}
+
+.header__email::before {
+    content: '\f003';
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    color: #ffc222;
 }
 
 .header__content {
@@ -96,4 +123,8 @@ header {
 
 .menu li + li {
     padding-left: 10px;
+}
+
+#modal {
+    display: none;
 }
