@@ -502,3 +502,61 @@ header {
     color: #282828;
     float: right;
 }
+
+/* Advantages */
+.advantages {
+    padding: 50px 0 40px;
+    background-image: url(../img/about-fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 285px;
+    background-size: cover;
+}
+
+.advantages__inner {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages__item {
+    max-width: 360px;
+    padding: 0 20px;
+}
+
+.advantages__title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    padding: 60px 0 15px;
+    position: relative;
+}
+
+.advantages__title::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ffc222;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.advantages__title::after {
+    content: "\f00c";
+    font-family: 'icomoon';
+    font-size: 14px;
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.advantages__text {
+    line-height: 24px;
+    color: #d3d2d2;
+    letter-spacing: .1px;
+}
